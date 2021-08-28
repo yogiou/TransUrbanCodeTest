@@ -1,0 +1,142 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "52d36a037517c2119ee8ac3e6660b931",
+    "entities": [
+      {
+        "tableName": "StarshipDataEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `model` TEXT, `manufacturer` TEXT, `cost_in_credits` TEXT, `length` TEXT, `max_atmosphering_speed` TEXT, `crew` TEXT, `passengers` TEXT, `cargo_capacity` TEXT, `consumables` TEXT, `hyperdrive_rating` TEXT, `mglt` TEXT, `starship_class` TEXT, `pilots` TEXT, `films` TEXT, `created` TEXT, `edited` TEXT, `url` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "manufacturer",
+            "columnName": "manufacturer",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "costInCredits",
+            "columnName": "cost_in_credits",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "length",
+            "columnName": "length",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "maxAtmospheringSpeed",
+            "columnName": "max_atmosphering_speed",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crew",
+            "columnName": "crew",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "passengers",
+            "columnName": "passengers",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cargoCapacity",
+            "columnName": "cargo_capacity",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "consumables",
+            "columnName": "consumables",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hyperDriveRating",
+            "columnName": "hyperdrive_rating",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mglt",
+            "columnName": "mglt",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "starshipClass",
+            "columnName": "starship_class",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pilots",
+            "columnName": "pilots",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "films",
+            "columnName": "films",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "created",
+            "columnName": "created",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "edited",
+            "columnName": "edited",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '52d36a037517c2119ee8ac3e6660b931')"
+    ]
+  }
+}
