@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_select_drawable"
+            android:paddingBottom="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nameView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/small_view_margin"
+                android:layout_marginTop="@dimen/small_view_margin"
+                android:layout_marginBottom="@dimen/small_view_margin"
+                android:layout_marginEnd="@dimen/small_view_margin"
+                app:layout_constraintWidth_percent="0.75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/modelView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameView"
+                android:layout_marginStart="@dimen/small_view_margin"
+                android:layout_marginTop="@dimen/small_view_margin"
+                android:layout_marginBottom="@dimen/small_view_margin"
+                android:layout_marginEnd="@dimen/small_view_margin"
+                app:layout_constraintWidth_percent="0.75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/manufacturerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/modelView"
+                android:layout_marginStart="@dimen/small_view_margin"
+                android:layout_marginTop="@dimen/small_view_margin"
+                android:layout_marginBottom="@dimen/small_view_margin"
+                android:layout_marginEnd="@dimen/small_view_margin"
+                app:layout_constraintWidth_percent="0.75"
+                app:layout_constraintWidth_default="percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/costInCreditsView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/manufacturerView"
+                android:layout_marginStart="@dimen/small_view_margin"
+                android:layout_marginTop="@dimen/small_view_margin"
+                android:layout_marginBottom="@dimen/small_view_margin"
+                android:layout_marginEnd="@dimen/small_view_margin"
+                app:layout_constraintWidth_percent="0.75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/favBtn"
+                app:layout_constraintHorizontal_bias="0.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/checkbox_margin"
+                app:layout_constraintEnd_toStartOf="@id/arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:button="@drawable/item_check_drawable"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/view_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_arrow_right_red"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

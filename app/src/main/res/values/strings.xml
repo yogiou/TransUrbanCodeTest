@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TransUrbanCodeTest</string>
+    <string name="details_title">Details</string>
+    <string name="starships_list">Starships List</string>
+    <string name="name">Name: %1$s</string>
+    <string name="model">Model: %1$s</string>
+    <string name="manufacturer">Manufacturer: %1$s</string>
+    <string name="cost_in_credits">Cost in credits: %1$s</string>
+    <string name="length">Length: %1$s</string>
+    <string name="maxAtmospheringSpeed">Max atmosphering speed: %1$s</string>
+    <string name="crew">Crew: %1$s</string>
+    <string name="passengers">Passengers: %1$s</string>
+    <string name="cargo_capacity">Cargo capacity: %1$s</string>
+    <string name="consumables">Consumables: %1$s</string>
+    <string name="hyperdrive_rating">Hyperdrive rating: %1$s</string>
+    <string name="mglt">MGLT: %1$s</string>
+    <string name="starship_class">Starship class: %1$s</string>
+    <string name="pilots">Pilots:\n%1$s</string>
+    <string name="films">Films:\n%1$s</string>
+    <string name="created">Created: %1$s</string>
+    <string name="edited">Edited: %1$s</string>
+    <string name="url">Url: %1$s</string>
+    <string name="retry">Retry</string>
+
+    <string-array name="sort_array">
+        <item>Default (backend sort)</item>
+        <item>Sort by Name</item>
+        <item>Sort by Model</item>
+        <item>Sort by Manufacturer</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="view_margin">15dp</dimen>
+    <dimen name="small_view_margin">10dp</dimen>
+    <dimen name="checkbox_margin">5dp</dimen>
+    <dimen name="indicator_size">50dp</dimen>
+    <dimen name="spinner_height">50dp</dimen>
+</resources>
