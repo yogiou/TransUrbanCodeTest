@@ -1,6 +1,5 @@
 ReadMe
 
-Candidate: Jie Wen
 
 Support Android version: 
 Android 7 - 11
